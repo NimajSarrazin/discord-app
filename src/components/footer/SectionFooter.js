@@ -52,11 +52,11 @@ export default function SectionFooter() {
               <div key={item.title}>
                 <ul>
                   <li>
-                    <p className="text-sm">{item.title}</p>
+                    <p className="text-[#5865f2] text-lg">{item.title}</p>
                   </li>
                   {item.liens.map((link) => (
                     <li className="mt-2" key={link}>
-                      <p className="text-white text-sm">{link}</p>
+                      <p className="text-white text-md">{link}</p>
                     </li>
                   ))}
                 </ul>
@@ -69,7 +69,7 @@ export default function SectionFooter() {
         <span className="">
           <img src="img/svgexport-1.svg" alt="discordsvg" />
         </span>
-        <BtnSecondary color="blue-600" content="Ouvrir Discord" />
+        <BtnSecondary color="bg-blue-800" content="Ouvrir Discord" />
       </div>
     </div>
   );

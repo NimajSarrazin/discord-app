@@ -2,11 +2,12 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { DataNavigation } from "../../data/DataNavigation";
 
-export default function Navigation() {
+export default function Navigation({color}) {
+  const colorStyle = `${color}`
   let route = useLocation().pathname;
   let activeStyle = "";
   return (
-    <header className=" bg-[#404eed]  py-4 px-6 text-white ">
+    <header className={`${colorStyle}  py-4 px-6 text-white `}>
       <ul className="flex justify-around">
         <Link to="/">
           <li>
@@ -29,7 +30,7 @@ export default function Navigation() {
           ))}
         </div>
         <div className="flex justify-center items-center">
-          <button className="bg-white p-3 rounded-full text-xs md:text-sm px-4 focus:outline-none hover:shadow-2xl hover:text-purple-400 transition duration-200 ease-in-out whitespace-nowrap text-black">
+          <button className="bg-white p-3 rounded-full text-xs md:text-sm px-4 focus:outline-none hover:shadow-2xl hover:text-blue-300 transition duration-200 ease-in-out whitespace-nowrap text-black">
             Open Discrod
           </button>
           <div className="h-9 text-white cursor-pointer lg:hidden">

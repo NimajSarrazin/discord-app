@@ -79,13 +79,14 @@ export default function CardSectionHero({ title, content}) {
       <div className="mt-32 z-10 mx-auto flex items-center justify-between flex-col">
         <h1 className="header-family w-full text-white md:text-6xl md:text-center text-left text-3xl sm:text-4xl px-4 uppercase font-black">
           {title}
+          <br/> endroit
         </h1>
         <p className="w-full md:w-3/4 lg:w-1/2 text-white md:mt-8 mt-4 sm:leading-8 leading-7 sm:text-base text-sm  tracking-normal md:text-center text-left px-4">
           {content}
         </p>
         <div className="w-full flex flex-col justify-start md:justify-center md:flex-row mt-8 mb-12 pb-40 space-x-4">
-          <BtnPrimary color='white'/>
-          <BtnSecondary color='gray-700' content='Ouvrir Discord dans ton naviateur'/>
+          <BtnPrimary color='bg-white'/>
+          <BtnSecondary color='bg-gray-900' content='Ouvrir Discord dans ton naviateur'/>
         </div>
       </div>
     </section>

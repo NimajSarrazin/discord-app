@@ -5,16 +5,17 @@ import SectionVoiceConnected from "../components/SectionVoiceConnected";
 import SectionCommu from "../components/SectionCommu";
 import SectionChilling from "../components/SectionChilling";
 import SectionFooter from "../components/footer/SectionFooter";
-import { animateScroll as scroll } from "react-scroll";
+import Navigation from "../components/navbar/Navigation";
 
 
 export default function HomePage() {
   return (
     <div>
+      <Navigation color="bg-[#404eed]" />
       <SectionHero />
       <SectionStudyGroup />
-      <SectionVoiceConnected/>
-      <SectionCommu/>
+      <SectionVoiceConnected />
+      <SectionCommu />
       <SectionChilling />
       <SectionFooter />
     </div>

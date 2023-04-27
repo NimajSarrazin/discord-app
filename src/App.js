@@ -9,7 +9,6 @@ import HomePage from "./page/HomePage";
 function App() {
   return (
     <Router>
-      <Navigation />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/download" element={<DowloadPage />} />

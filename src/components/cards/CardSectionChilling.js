@@ -22,7 +22,7 @@ export default function CardSectionChilling() {
           </div>
           <img className="w-10/12" src="img/image1.svg" alt="" />
           <img
-            className="w-50 sm:w-85 mt-10 mx-4"
+            className="w-5/12 sm:w-85 mt-10 mx-4"
             src="img/svgexport-7.svg"
             alt=""
           />
@@ -30,7 +30,7 @@ export default function CardSectionChilling() {
             On se lance dans l'aventure ?
           </h2>
           <div className="mt-10">
-            <BtnPrimary color="blue-600" textColor="white" />
+            <BtnPrimary color="bg-blue-800" textColor="white" />
           </div>
         </div>
       </div>
