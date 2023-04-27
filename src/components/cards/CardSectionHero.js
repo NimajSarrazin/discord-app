@@ -85,7 +85,7 @@ export default function CardSectionHero({ title, content}) {
         </p>
         <div className="w-full flex flex-col justify-start md:justify-center md:flex-row mt-8 mb-12 pb-40 space-x-4">
           <BtnPrimary color='white'/>
-          <BtnSecondary />
+          <BtnSecondary color='gray-700' content='Ouvrir Discord dans ton naviateur'/>
         </div>
       </div>
     </section>

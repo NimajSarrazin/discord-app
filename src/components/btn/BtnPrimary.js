@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 export default function BtnPrimary({ color, textColor }) {
   return (
     <div className="">
-      <Link>
+      <Link to="https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x86">
         <button
-          className={`w-36 sm:w-6/12 md:w-5/12 lg:w-4/12 lx:w-2/12 2xl:w-96 flex justify-center items-center bg-${color} text-${textColor} py-3 px-6 rounded-full text-base mr-4hover:shadow-2xl hover:text-purple-400 focus:outline-none transition duration-200 ease-in-out`}
+          className={`w-36 sm:w-6/12 md:w-5/12 lg:w-4/12 lx:w-2/12 2xl:w-96 flex justify-center items-center bg-${color} text-${textColor} py-3 px-6 rounded-full text-base mr-4hover:shadow-2xl hover:text-blue-400 focus:outline-none transition duration-200 ease-in-out`}
         >
           <span className="inline-block">
             <svg className="fill-current h-5" viewBox="0 0 24 24">

@@ -1,5 +1,8 @@
 /* eslint-disable jsx-a11y/heading-has-content */
 import React from "react";
+import { DataFooter } from "../../data/DataFooter";
+import BtnSecondary from "../btn/BtnSecondary";
+import { Link } from "react-router-dom";
 
 export default function SectionFooter() {
   return (
@@ -42,19 +45,31 @@ export default function SectionFooter() {
             <img className=" mr-4 w-6 h-6" src="img/svgexport-13.svg" alt="" />
           </div>
         </aside>
-        <div className="flex flex-col md:flex-row md:flex-1 md:justify-between md:ml-20">
-          <div>
-            <ul>
-              <li>
-                <p className=" text-sm">Produit</p>
-              </li>
-              <li className="mt-2"></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
+        {DataFooter.map((item) => (
+          // Utilisation de la méthode map() pour afficher les éléments venant de la card dataFooter qui contient des objets avec des propriété title et une propriété liens.
+          <div className="flex justify-between flex-col md:flex-row md:flex-1 md:justify-between md:ml-20">
+            <div className="flex flex-row mt-10 md:mt-0">
+              <div key={item.title}>
+                <ul>
+                  <li>
+                    <p className="text-sm">{item.title}</p>
+                  </li>
+                  {item.liens.map((link) => (
+                    <li className="mt-2" key={link}>
+                      <p className="text-white text-sm">{link}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
+        ))}
+      </div>
+      <div className="flex flex-row justify-between justify-items-center items-center pt-8 mt-8 border-t-2 border-blue-500">
+        <span className="">
+          <img src="img/svgexport-1.svg" alt="discordsvg" />
+        </span>
+        <BtnSecondary color="blue-600" content="Ouvrir Discord" />
       </div>
     </div>
   );

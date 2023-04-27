@@ -3,7 +3,7 @@ import React from "react";
 export const DataFooter = [
   {
     title: "Produit",
-    liens: ["Download", "Nitro", "Status"],
+    liens: ["Télécharger", "Nitro", "Status"],
   },
   {
     title: "Entrepise",
