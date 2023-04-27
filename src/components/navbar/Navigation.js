@@ -6,7 +6,7 @@ export default function Navigation() {
   let route = useLocation().pathname;
   let activeStyle = "";
   return (
-    <header className=" bg-[#404eed]  py-4 px-6 text-white">
+    <header className=" bg-[#404eed]  py-4 px-6 text-white ">
       <ul className="flex justify-around">
         <Link to="/">
           <li>

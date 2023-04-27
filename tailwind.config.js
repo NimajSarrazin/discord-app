@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "hero-img": "url('/public/img/svgexport-4.svg')",
-        "hero_img":"url('/public/img/svgexport-5.svg')",
+        hero_img: "url('/public/img/svgexport-5.svg')",
         "footer-texture": "url('/img/footer-texture.png')",
       },
     },
