@@ -21,7 +21,7 @@ export default function Navigation({ color }) {
       {/* condidtion de showModal est vrai elle affichera la liste de la navigation */}
       {showModal && (
         <Fade right>
-          <div className="z-10 bg-gray-400 text-black opacity-50  sm:block absolute right-0   md:block lg:hidden">
+          <div className="z-10  sm:block bg-gray-400 text-black bg-opacity-50  border-r-white border-b-black shadow-lg shadow-slate-950 absolute right-9 list-none w-32 text-center p-2 mt-12 hover:bg-blue-300   md:block lg:hidden">
             {DataNavigation.map((item) => (
               <Link to={item.URL} key={item.text}>
                 {/* si la route est strictement égale(vrai) elle appliquera le activeStyle si non underline sera appliqué */}

@@ -1,7 +1,10 @@
 import React from 'react'
+import Navigation from '../components/navbar/Navigation'
 
 export default function SafetyPage() {
   return (
-    <div>SafetyPage</div>
-  )
+    <div>
+      <Navigation color="bg-[#404eed]" />
+    </div>
+  );
 }
