@@ -3,8 +3,8 @@ import DowloadPage from "./page/DowloadPage";
 import SafetyPage from "./page/SafetyPage";
 import LoginPage from "./page/LoginPage";
 import ErrorPage from "./page/ErrorPage";
-import Navigation from "./components/navbar/Navigation";
 import HomePage from "./page/HomePage";
+import SectionFooter from "./components/footer/SectionFooter";
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
+      <SectionFooter />
     </Router>
   );
 }

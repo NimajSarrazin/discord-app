@@ -16,7 +16,7 @@ export default function CardSectionHero({ title, content}) {
           height="626"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          class="hidden md:block z-0 absolute bottom-0 right-0 mt-10"
+          className="hidden md:block z-0 absolute bottom-0 right-0 mt-10"
         >
           <g clip-path="url(#center_bg_landing_header_svg__clip0)">
             <path

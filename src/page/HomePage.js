@@ -4,7 +4,6 @@ import SectionStudyGroup from "../components/SectionStudyGroup";
 import SectionVoiceConnected from "../components/SectionVoiceConnected";
 import SectionCommu from "../components/SectionCommu";
 import SectionChilling from "../components/SectionChilling";
-import SectionFooter from "../components/footer/SectionFooter";
 import Navigation from "../components/navbar/Navigation";
 
 
@@ -17,7 +16,6 @@ export default function HomePage() {
       <SectionVoiceConnected />
       <SectionCommu />
       <SectionChilling />
-      <SectionFooter />
     </div>
   );
 }
