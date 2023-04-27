@@ -9,7 +9,7 @@ export default function CardSectionHero({ title, content}) {
         <img
           src="img/svgexport-5.svg"
           alt=""
-          className="block sm:hidden md:block w-72 md:w-1/2 xl:w-1/3 2xl:w-1/3 3xl:w-1/4 md:h-72 z-10 absolute bottom-0 md:-left-48 3xl:ml-112 sm:-ml-48 xl:ml-28 -mt-60 "
+          className="block sm:hidden md:block w-72 md:w-1/2 xl:w-1/3 2xl:w-1/3 3xl:w-1/4  z-10 absolute bottom-0 md:-left-48 3xl:ml-112 sm:-ml-48 xl:ml-28 -mt-60 "
         />
         <svg
           width="2560"
