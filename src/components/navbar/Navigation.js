@@ -8,7 +8,7 @@ export default function Navigation({ color }) {
   // le hook useState permet de crée et afficher ou cacher la data-navigation
   const [showModal, setShowModal] = useState(false);
 
-  // permer de récupérer l'emplacement de l'utilisateur 
+  // permer de récupérer l'emplacement de l'utilisateur
   let route = useLocation().pathname;
   let activeStyle = "";
   // handleClick est ajoutée à l'img pour déclancher l'affichage de la navigation
@@ -17,28 +17,54 @@ export default function Navigation({ color }) {
   };
 
   return (
-    <header className={`${colorStyle}  py-4 px-6 text-white `}>
+    <header className={`${colorStyle} py-4 px-6 text-white `}>
       {/* condidtion de showModal est vrai elle affichera la liste de la navigation */}
       {showModal && (
         <Fade right>
-          <div className="z-10  sm:block bg-gray-400 text-black bg-opacity-50  border-r-white border-b-black shadow-lg shadow-slate-950 absolute right-9 list-none w-32 text-center p-2 mt-12 hover:bg-blue-300   md:block lg:hidden">
-            {DataNavigation.map((item) => (
-              <Link to={item.URL} key={item.text}>
-                {/* si la route est strictement égale(vrai) elle appliquera le activeStyle si non underline sera appliqué */}
-                <li
-                  className={
-                    route === item.URL ? activeStyle : "hover:underline"
-                  }
-                >
-                  {item.text}
-                </li>
+          <div className=" transition transform ease-linear rounded-tl-lg rounded-bl-lg z-30 duration-500 w-1/2 absolute bg-white top-0 right-0 h-screen flex flex-col justify-between text-black list-none lg:hidden">
+            <div className="flex flex-row justify-between p-4">
+              <Link to='/' onClick={() => setShowModal(false)}>
+                <img
+                  src="img/svgexport-1.svg"
+                  alt="discord logo"
+                  className="bg-gray-700 p-2 w-auto h-auto object-contain"
+                />
               </Link>
-            ))}
-            <button onClick={() => setShowModal(false)}>Fermer</button>
+              <svg
+                onClick={() => setShowModal(false)}
+                className="h-8 w-8 cursor-pointer"
+                viewBox="0 0 12 12"
+              >
+                <g fill="none" fill-rule="evenodd" aria-hidden="true">
+                  <path d="M0 0h12v12H0"></path>
+                  <path
+                    fill="currentColor"
+                    d="M9.5 3.205L8.795 2.5 6 5.295 3.205 2.5l-.705.705L5.295 6 2.5 8.795l.705.705L6 6.705 8.795 9.5l.705-.705L6.705 6"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <ul className="list-none  text-sm text-left pl-2 flex-1 space-y-2 mt-4 pt-4 mx-4 border-t-2 border-discord-offWhite">
+              {DataNavigation.map((item) => (
+                <Link to={item.URL} key={item.text}>
+                  {/* si la route est strictement égale(vrai) elle appliquera le activeStyle si non underline sera appliqué */}
+                  <li
+                    className={
+                      route === item.URL ? activeStyle : "hover:underline"
+                    }
+                  >
+                    {item.text}
+                  </li>
+                </Link>
+              ))}
+            </ul>
+            <button className="" onClick={() => setShowModal(false)}>
+              Fermer
+            </button>
           </div>
         </Fade>
       )}
-      <ul className="flex justify-around">
+      <ul className="flex justify-between xl:justify-evenly  lg:justify-evenly">
         <Link to="/">
           <li>
             <img

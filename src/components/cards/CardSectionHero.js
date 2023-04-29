@@ -4,12 +4,12 @@ import BtnSecondary from "../btn/BtnSecondary";
 
 export default function CardSectionHero({ title, content}) {
   return (
-    <section className="bg-[url('/public/img/svgexport-4.svg')] flex mx-auto md:mt-15 p-2 relative overflow-hidden bg-[#404eed]">
+    <section className="bg-[url('/public/img/svgexport-4.svg')] h-auto w-auto flex mx-auto  md:mt-15 p-2 relative overflow-hidden bg-[#404eed]">
       <div className="">
         <img
           src="img/svgexport-5.svg"
-          alt=""
-          className="block sm:hidden md:block w-72 md:w-1/2 xl:w-1/3 2xl:w-1/3 3xl:w-1/4  z-10 absolute bottom-0 md:-left-48 3xl:ml-112 sm:-ml-48 xl:ml-28 -mt-60 "
+          alt={title}
+          className="block -left-12 z-10 absolute bottom-0 sm:hidden sm:left-0 md:block md:w-3/4 md:left-0 lg:-left-32 xl:w-2/4 2xl:w-1/3 3xl:w-1/4 sm:-ml-48 xl:ml-28 -mt-60 "
         />
         <svg
           width="2560"
@@ -72,21 +72,25 @@ export default function CardSectionHero({ title, content}) {
         </svg>
         <img
           src="img/svgexport-6.svg"
-          alt=""
-          className="hidden sm:block md:w-1/2 md:h-64 xl:h-80 z-10 absolute bottom-0 right-0 -mr-48"
+          alt={title}
+          className="hidden sm:block xl:-right-16 md:w-1/2 xl:h-80 z-10 absolute bottom-0 right-0 -mr-32 overflow-hidden"
         />
       </div>
-      <div className="mt-32 z-10 mx-auto flex items-center justify-between flex-col">
+      <div className="mt-24 z-10 mx-auto flex items-center justify-between flex-col lg:mt-14">
         <h1 className="header-family w-full text-white md:text-6xl md:text-center text-left text-3xl sm:text-4xl px-4 uppercase font-black">
           {title}
-          <br/> endroit
+          <br /> endroit...
         </h1>
         <p className="w-full md:w-3/4 lg:w-1/2 text-white md:mt-8 mt-4 sm:leading-8 leading-7 sm:text-base text-sm  tracking-normal md:text-center text-left px-4">
           {content}
         </p>
-        <div className="w-full flex flex-col justify-start md:justify-center md:flex-row mt-8 mb-12 pb-40 space-x-4 sm:gap-4">
-          <BtnPrimary color='bg-white'/>
-          <BtnSecondary color='bg-gray-900' content='Ouvrir Discord dans ton naviateur' textColor='white'/>
+        <div className="gap-4 w-full flex flex-col justify-start md:justify-center md:flex-row mt-8 mb-12 pb-40 space-x-4 sm:gap-4">
+          <BtnPrimary color="bg-white" />
+          <BtnSecondary
+            color="bg-gray-900"
+            content="Ouvrir Discord dans ton naviateur"
+            textColor="white"
+          />
         </div>
       </div>
     </section>

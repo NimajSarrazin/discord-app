@@ -13,7 +13,7 @@ export default function CardDownloadPage() {
           content="L'aventure t'attend ! Retrouve tes amis via notre application de bureau et continue ta conversation sur ton portable."
           direction="md:flex-row-reverse"
         />
-        <div className="flex flex-col  items-center justify-center  md:ml-24 md:flex-col md:space-x-3  md:justify-start xl:flex-row xl:ml-96   lg:justify-start relative -top-20 lg:ml-80">
+        <div className="flex flex-col  items-center justify-center   md:ml-24 md:flex-col md:space-x-3  md:justify-start xl:flex-row xl:ml-96  lg:justify-start relative -top-20 lg:ml-80">
           <BtnPrimary color="bg-blue-700" />
           <div className="">
             <p className="text-sm"> Windows 7 ou version supérieure</p>
