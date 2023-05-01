@@ -4,7 +4,7 @@ import { DataDownload } from "../../../data/DataDownload";
 
 export default function CardDownload() {
   return (
-    <div class="py-24 px-28 gap-x-10 text-black flex flex-col gap-y-64 lg:px-20 lg:gap-x-10 lg:gap-y-10 md:grid grid-cols-2 grid-rows-[150px] 2xl:grid-row-[300px] ">
+    <div class="py-20 gap-x-10 text-black flex flex-col lg:px-20 lg:gap-x-10 lg:gap-y-10 md:grid grid-cols-2 grid-rows-[150px] 2xl:grid-row-[300px] ">
       {DataDownload.map((data) => (
         <div class={data.containerClass}>
           <CardGrid
