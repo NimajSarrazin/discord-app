@@ -4,7 +4,7 @@ import BtnSecondary from "../btn/BtnSecondary";
 
 export default function CardSectionHero({ title, content }) {
   return (
-    <section className="bg-[url('/public/img/svgexport-4.svg')] h-auto w-auto flex mx-auto  md:mt-15 p-2 relative overflow-hidden bg-[#404eed]">
+    <section className="bg-[url('/public/img/svgexport-4.svg')] h-auto w-auto flex mx-auto md:mt-15 p-2 relative overflow-hidden bg-[#404eed]">
       <div className="">
         <img
           src="img/svgexport-5.svg"
@@ -73,7 +73,7 @@ export default function CardSectionHero({ title, content }) {
         <img
           src="img/svgexport-6.svg"
           alt={title}
-          className="hidden sm:block xl:-right-16 md:w-1/2 xl:w-[48%] z-10 absolute bottom-0 right-0 xl:left-3/4 overflow-hidden"
+          className="hidden sm:block xl:-right-16 md:w-3/4 lg:w-auto lg:h-auto z-10 absolute bottom-0 right-0 xl:left-3/4 overflow-hidden"
         />
       </div>
         <div className="mt-24 z-10 mx-auto flex items-center justify-between flex-col lg:mt-14">
@@ -84,7 +84,7 @@ export default function CardSectionHero({ title, content }) {
           <p className="w-full md:w-3/4 lg:w-1/2 text-white md:mt-8 mt-4 sm:leading-8 leading-7 sm:text-base text-sm  tracking-normal md:text-center text-left px-4">
             {content}
           </p>
-          <div className="gap-4 w-full flex flex-col justify-start md:justify-center md:flex-row mt-12 xl:-mb-16 pb-40 space-x-4 sm:gap-4">
+          <div className="mb-10 gap-4 w-full flex flex-col justify-start md:justify-center md:flex-row mt-12 xl:-mb-16 pb-40 space-x-4 sm:gap-4">
             <BtnPrimary color="bg-white" />
             <BtnSecondary
               color="bg-gray-900"
