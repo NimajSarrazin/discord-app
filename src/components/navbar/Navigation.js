@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { DataNavigation } from "../../data/DataNavigation";
 import { Fade } from "react-reveal";
+import BtnPrimary from "../btn/BtnPrimary";
 
 export default function Navigation({ color }) {
   const colorStyle = `${color}`;
@@ -21,9 +22,9 @@ export default function Navigation({ color }) {
       {/* condidtion de showModal est vrai elle affichera la liste de la navigation */}
       {showModal && (
         <Fade right>
-          <div className=" transition transform ease-linear rounded-tl-lg rounded-bl-lg z-30 duration-500 w-1/2 absolute bg-white top-0 right-0 h-screen flex flex-col justify-between text-black list-none lg:hidden">
+          <div className="flex flex-col transition transform ease-linear rounded-tl-lg rounded-bl-lg z-30 duration-500 w-3/4  absolute bg-white top-0 right-0 h-screen l justify-between text-black list-none lg:hidden">
             <div className="flex flex-row justify-between p-4">
-              <Link to='/' onClick={() => setShowModal(false)}>
+              <Link to="/" onClick={() => setShowModal(false)}>
                 <img
                   src="img/svgexport-1.svg"
                   alt="discord logo"
@@ -44,13 +45,15 @@ export default function Navigation({ color }) {
                 </g>
               </svg>
             </div>
-            <ul className="list-none  text-sm text-left pl-2 flex-1 space-y-2 mt-4 pt-4 mx-4 border-t-2 border-discord-offWhite">
+            <ul className="list-none text-2xl pl-2 flex-1 my-5 mx-4 border-t-2 space-y-7">
               {DataNavigation.map((item) => (
                 <Link to={item.URL} key={item.text}>
                   {/* si la route est strictement égale(vrai) elle appliquera le activeStyle si non underline sera appliqué */}
                   <li
                     className={
-                      route === item.URL ? activeStyle : "hover:underline"
+                      route === item.URL
+                        ? activeStyle
+                        : "hover:underline hover:text-blue-300"
                     }
                   >
                     {item.text}
@@ -58,9 +61,11 @@ export default function Navigation({ color }) {
                 </Link>
               ))}
             </ul>
-            <button className="" onClick={() => setShowModal(false)}>
-              Fermer
-            </button>
+            <BtnPrimary
+              color="bg-blue-500"
+              content="Télécharger"
+              textColor="white"
+            />
           </div>
         </Fade>
       )}
@@ -88,7 +93,7 @@ export default function Navigation({ color }) {
         </div>
         <div className="flex justify-center items-center">
           <button className="bg-white p-3 rounded-full text-xs md:text-sm px-4 focus:outline-none hover:shadow-2xl hover:text-blue-300 transition duration-200 ease-in-out whitespace-nowrap text-black">
-            Open Discrod
+            Open discord
           </button>
           <div className="h-9 text-white cursor-pointer lg:hidden">
             <img onClick={handleClick} src="img/svgexport-2.svg" alt="" />
