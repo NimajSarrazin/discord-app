@@ -14,7 +14,7 @@ export default function CardGrid({ url_img, title, content }) {
           </span>
           <img
             src={`img/${url_img}`}
-            alt=""
+            alt={title}
             className="mx-auto w-auto h-auto mt-[64px] object-fit overflow-clip content-box"
           />
           <p>{content}</p>
