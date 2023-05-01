@@ -92,9 +92,11 @@ export default function Navigation({ color }) {
           ))}
         </div>
         <div className="flex justify-center items-center">
-          <button className="bg-white p-3 rounded-full text-xs md:text-sm px-4 focus:outline-none hover:shadow-2xl hover:text-blue-300 transition duration-200 ease-in-out whitespace-nowrap text-black">
-            Open discord
-          </button>
+          <Link to="https://discord.com/channels/@me">
+            <button className="bg-white p-3 rounded-full text-xs md:text-sm px-4 focus:outline-none hover:shadow-2xl hover:text-blue-300 transition duration-200 ease-in-out whitespace-nowrap text-black">
+              Open discord
+            </button>
+          </Link>
           <div className="h-9 text-white cursor-pointer lg:hidden">
             <img onClick={handleClick} src="img/svgexport-2.svg" alt="" />
           </div>
