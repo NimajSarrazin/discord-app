@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     fontFamily: {
       Poppins: "Poppins",
+      Ginto: "Ginto nord"
     },
     extend: {
       backgroundImage: {
